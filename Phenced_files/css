@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Catamaran Light'), local('Catamaran-Light'), url(https://web.archive.org/web/20200225045742im_/https://fonts.gstatic.com/s/catamaran/v6/o-0NIpQoyXQa2RxT7-5jThZVZNyE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Catamaran Regular'), local('Catamaran-Regular'), url(https://web.archive.org/web/20200225045742im_/https://fonts.gstatic.com/s/catamaran/v6/o-0IIpQoyXQa2RxT7-5r5TRF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Catamaran Medium'), local('Catamaran-Medium'), url(https://web.archive.org/web/20200225045742im_/https://fonts.gstatic.com/s/catamaran/v6/o-0NIpQoyXQa2RxT7-5jFhdVZNyE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Catamaran SemiBold'), local('Catamaran-SemiBold'), url(https://web.archive.org/web/20200225045742im_/https://fonts.gstatic.com/s/catamaran/v6/o-0NIpQoyXQa2RxT7-5jOhBVZNyE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Catamaran Bold'), local('Catamaran-Bold'), url(https://web.archive.org/web/20200225045742im_/https://fonts.gstatic.com/s/catamaran/v6/o-0NIpQoyXQa2RxT7-5jXhFVZNyE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Encode Sans Expanded';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Encode Sans Expanded Light'), local('EncodeSansExpanded-Light'), url(https://web.archive.org/web/20200225045742im_/https://fonts.gstatic.com/s/encodesansexpanded/v4/c4mw1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpKOCxNPVog.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Encode Sans Expanded';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Encode Sans Expanded Regular'), local('EncodeSansExpanded-Regular'), url(https://web.archive.org/web/20200225045742im_/https://fonts.gstatic.com/s/encodesansexpanded/v4/c4m_1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpolKQM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Encode Sans Expanded';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Encode Sans Expanded Medium'), local('EncodeSansExpanded-Medium'), url(https://web.archive.org/web/20200225045742im_/https://fonts.gstatic.com/s/encodesansexpanded/v4/c4mw1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpLWChNPVog.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Encode Sans Expanded';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Encode Sans Expanded SemiBold'), local('EncodeSansExpanded-SemiBold'), url(https://web.archive.org/web/20200225045742im_/https://fonts.gstatic.com/s/encodesansexpanded/v4/c4mw1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpL6DRNPVog.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 04:57:42 Feb 25, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:25:59 May 29, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.651
+  exclusion.robots: 0.028
+  exclusion.robots.policy: 0.016
+  esindex: 0.01
+  cdx.remote: 60.822
+  LoadShardBlock: 132.895 (3)
+  PetaboxLoader3.datanode: 148.797 (4)
+  load_resource: 792.945
+  PetaboxLoader3.resolve: 551.841
+*/

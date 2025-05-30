@@ -1,0 +1,274 @@
+@media screen and (max-width:1700px){
+	 
+}
+@media screen and (max-width:1366px){ .areaimg .thumbnail{display:inline-block;padding:0;margin-right:10px;border:0px;box-shadow:0 0 6px rgba(0, 0, 0, 0.2);   max-width:350px;   }}
+@media screen and (max-width:1199px){}
+@media screen and (max-width:991px){
+.nav.navbar-nav.navbar-right > li:last-child a {
+  padding-right:15px;
+}
+.fz-24 {font-size: 22px; }
+.data-sec img {
+  margin-top: 40px;
+  max-width: 100%; 
+}
+.thumbnail.travel.activeimg{margin-left:30px;}
+	.navbar-brand {left: 36px;}
+	#apps .apps-holder .app-icon-holder .app-title {
+	  display: block;
+	  position: relative;
+	  vertical-align: middle;
+	}
+	#apps .apps-holder .app-icon-holder .app-icon {
+	  display: block;
+	  float: left;
+	  margin-right: 15px;
+	}
+	.features .section-heading {
+	  margin-bottom: 35px;
+	  padding-left: 74px;
+	  padding-top: 25px;
+	  text-align: left;
+	}
+	.navbar-default .navbar-toggle {
+  border-color: none;border-width:0;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent !important;
+}
+.bannertext a img {
+  max-width: 150px;
+}
+.appdownload a img {  max-width: 150px;}
+
+
+}
+@media screen and (min-width:768px) and (max-width:800px){}
+@media screen and (max-width:767px){
+ html, body{overflow-x:hidden;font-size:16px;} 
+ .menues {
+  float: right;
+}
+.data-sec img {
+  margin-top: 40px;
+  max-width: 70%;
+}
+.fz-24 {  font-size: 20px; }
+.aboutteam {
+  margin-top: 15px;
+  position: relative;
+}
+.member-name { 
+  font-size: 18px; 
+}
+.team .thumbnail .caption { 
+  margin-top: 10px; 
+}
+.area {padding-bottom: 0!important;}
+.nav > li {
+  display: inline-block;
+  position: relative;
+}
+.navbar-nav {
+  margin: 1px -10px;
+}
+.areaimg .thumbnail{display:inline-block;padding:0;
+margin-right:10px !important;
+margin-left:10px !important;
+border:0px;box-shadow:0 0 6px rgba(0, 0, 0, 0.2);   max-width:340px;   }
+.footer p {
+  text-align: center;
+}
+.areaimg .thumbnail:last-child {
+  margin-right: 10px;
+}
+
+.icon.f1{ background-position: -29px -248px;}
+.icon.f2{ background-position: -93px -248px;}
+.icon.f3{ background-position:  -154px -245px;} 
+.icon.f4{ background-position:  -218px -248px;} 
+.icon.f5{ background-position:  -281px -250px;} 
+.icon.f6 {background-position: -342px -248px;}	
+	.mr20 {margin-bottom: 10px;margin-right: 0;}
+	.mb10 {display: block;margin-bottom: 0px;margin-right: 0;}
+	#apps .apps-holder .app-details div[class^="app-details"] {top: 58px;}
+	#apps .apps-holder .apps-details-holder {
+	 
+	  display: block;
+	  height: 570px;
+	}
+	#apps .apps-holder{ display:block;}
+	#apps .apps-holder .app-details { 
+	  margin-top: 0;
+	}
+	#apps .apps-holder .app-details div[class^="app-details"] {left: 0;}
+	/* #apps .apps-holder .apps-details-holder {
+	  background-position:center center;
+	 } */
+	 .section-heading{text-align:center!important;font-size:24px;}
+	 .features .section-heading{padding-left:0;}
+	 #apps .apps-holder .apps-links-holder {
+	 float:none!important;
+	}
+
+	 
+.navigations {
+  background: #ddd none repeat scroll 0 0;
+  bottom: 0;
+  display: block;
+  left: 50%;
+  margin-left: -46px;
+  margin-top: 80px;
+  position: absolute;
+  top: 100%;
+}	  
+.navilist li {
+  background: #aaa none repeat scroll 0 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 10px;
+  margin: 2px;
+  width: 10px;
+}
+.navilist li.active {
+  background: #555 none repeat scroll 0 0;
+}
+.mnone{display:none!important;}
+.app-icon-holder.opened {
+  background-color: transparent;
+  box-shadow: none;
+/*   margin-bottom: 20px; */cursor:default;
+}
+#apps .apps-holder .app-icon-holder {cursor: default;}
+#apps .apps-holder .app-icon-holder:hover {
+  background-color: transparent;
+  box-shadow:none;
+}
+#apps .apps-holder .apps-details-holder { 
+  width: 281px!important;
+  margin: 0 auto;
+  float:none;
+}
+#apps .apps-holder .app-icon-holder .app-icon {
+  display:block;float:left;
+}
+#apps .apps-holder .app-icon-holder .app-title {display: block;}
+.footer h1{text-align:center;}
+.navbar-brand > img {
+  display: block;
+  padding: 13px 0;
+  width: 43px;
+}
+.navbar-toggle { 
+  margin-top: 16px;  
+}
+.navbar-brand {
+  left: 14px;
+}
+.pl-40{padding-left:15px;}
+.banner h1 {
+  margin-top: 0px; 
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.apps-details-holder{display:none!important;}
+#apps .apps-holder .app-icon-holder { 
+  width: 100%;padding:15px 5px 10px;
+}
+.features .section-heading { 
+  padding-top: 0;margin-bottom:25px; 
+}
+.servicelist li .icon {
+  height: 110px; 
+}
+.zi-9 img {
+ display: inline-block;
+    float: left;
+    max-width: 145px;
+}
+.appdownload a img {
+  max-width: 145px;
+}
+.bannertext a{display:inline-block;}
+.banner {height: 425px;}
+.bannertext {bottom: 20px; padding-right: 15px;}
+.pt-40 {padding-top: 20px;}
+.bannertext h1{font-size:30px;}
+.section-space {padding: 40px 0;}
+.servicelist li .icon {margin-top: 5px;}
+h3 {
+  font-size: 18px;
+}
+.areaicon {
+  margin: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position:relative;
+
+}
+.areaicon > div {
+  display: inline-block;
+  float: none;
+  padding: 0 20px;
+  width: auto;
+}
+
+.rightarrow {
+  background: red none repeat scroll 0 0;
+  display: inline;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: -54px;
+  width: 20px;
+  cursor:pointer;
+}
+
+}
+ 
+@media screen and (max-width:600px){
+	.areaimg .thumbnail{ max-width:500px;   }
+}
+@media screen and (max-width:500px){
+	.areaimg .thumbnail{ max-width:440px;   }
+}
+@media screen and (max-width:450px){
+	.areaimg .thumbnail{ max-width:400px;   }
+}
+@media screen and (max-width:400px){
+	.areaimg .thumbnail{ max-width:370px;   }
+}
+@media screen and (max-width:360px){
+	.areaimg .thumbnail{ max-width:340px;   }
+}
+@media screen and (max-width:320px){
+	.areaimg .thumbnail{ max-width:300px;   }
+}
+
+
+/*
+     FILE ARCHIVED ON 16:24:32 Feb 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:25:59 May 29, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.571
+  exclusion.robots: 0.027
+  exclusion.robots.policy: 0.016
+  esindex: 0.01
+  cdx.remote: 21.512
+  LoadShardBlock: 362.851 (3)
+  PetaboxLoader3.datanode: 274.483 (5)
+  load_resource: 468.624 (2)
+  PetaboxLoader3.resolve: 288.192 (2)
+*/
