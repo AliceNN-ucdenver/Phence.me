@@ -872,7 +872,7 @@ playback timings (ms):
 
 /* Fix banner phone image overflow over header */
 .banner .zi-9 img {
-  max-height: calc(100vh - 120px); /* Ensure image doesn't exceed viewport minus header space */
+  max-height: calc(100vh - 100px); /* Reduced constraint to allow more height */
   width: auto !important;
   position: relative;
   z-index: 5 !important; /* Lower than header z-index */
@@ -894,7 +894,7 @@ playback timings (ms):
 .banner .bannertext {
   position: absolute;
   bottom: 0;
-  top: 100px !important; /* Force minimum top spacing */
+  top: 60px !important; /* Reduced from 100px to move phone up */
   z-index: 1 !important;
 }
 
@@ -902,8 +902,9 @@ playback timings (ms):
 .banner .bannertext .col-lg-3,
 .banner .bannertext .col-md-4,
 .banner .bannertext .col-sm-5 {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 140px); /* Reduced from 200px to allow phone to move up */
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Changed from center to flex-start to move phone up */
+  padding-top: 20px; /* Add some top padding for positioning */
 }
