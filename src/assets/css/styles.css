@@ -474,7 +474,7 @@ transition: all 0.3s ease;
  /*  width: 70%; */
 }
 #apps .apps-holder .apps-details-holder {
-  background: rgba(0, 0, 0, 0) url("/web/20200216110151im_/https://phenced.com/wp-content/themes/phenced/images/mobile-cover.png") no-repeat scroll 0 0;
+  background: none;
   display: inline-block;
   height: 570px;
  /*  width: 30%; */
@@ -724,7 +724,7 @@ margin-left: 20px;
   margin-bottom: 10px;
 }
 .aboutteam li::before {
-  background:url('/web/20200216110151im_/https://phenced.com/wp-content/themes/phenced/images/bullets.svg');
+  background: #00b9b9;
   content: "";
   display: inline-block;
   height: 10px;
@@ -732,6 +732,7 @@ margin-left: 20px;
   width: 10px;
   left:3px;
   top: 8px;
+  border-radius: 50%;
 }
 .mb-40{margin-bottom:40px;}
 .otherpage{background:rgba(0,0,0,0.6);}
@@ -921,8 +922,8 @@ playback timings (ms):
   /* Mobile banner adjustments - Better stacking */
   .banner {
     height: auto !important;
-    min-height: 600px !important;
-    padding: 80px 0 30px 0 !important;
+    min-height: auto !important;
+    padding: 80px 0 40px 0 !important;
     background-size: cover !important;
     background-position: center center !important;
     background-attachment: scroll !important;
@@ -930,9 +931,6 @@ playback timings (ms):
   
   .banner .container {
     height: auto !important;
-    display: flex !important;
-    align-items: center !important;
-    min-height: calc(600px - 110px) !important;
     position: relative !important;
     z-index: 2 !important;
   }
@@ -941,39 +939,43 @@ playback timings (ms):
     position: relative !important;
     top: auto !important;
     bottom: auto !important;
-    padding: 15px 0 !important;
+    padding: 0 !important;
     width: 100% !important;
     margin: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
   }
   
   .banner .bannertext > div {
     width: 100% !important;
     float: none !important;
     display: block !important;
-    margin-bottom: 5px !important;
+    margin-bottom: 20px !important;
     text-align: center !important;
   }
   
   .banner .bannertext .zi-9:first-child {
     order: 1 !important;
-    margin-bottom: 5px !important;
+    margin-bottom: 20px !important;
+    height: auto !important;
+    min-height: auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
   
   .banner .bannertext .zi-9:last-child {
     order: 2 !important;
+    margin-bottom: 0 !important;
   }
   
-  /* Mobile banner phone image */
+  /* Mobile banner phone image - keep original size */
   .banner .zi-9 img {
-    max-height: 200px !important;
-    max-width: 140px !important;
+    max-height: none !important;
+    max-width: none !important;
     height: auto !important;
     width: auto !important;
     display: block !important;
-    margin: 0 auto 5px auto !important;
+    margin: 0 auto !important;
   }
   
   /* Mobile banner text */
@@ -1052,8 +1054,8 @@ playback timings (ms):
   
   /* Ensure service icons maintain their sprite positions on mobile */
   .service .servicelist li .icon {
-    width: 68px !important;
-    height: 62px !important;
+    width: 136px !important;
+    height: 125px !important;
     background: url('../svg/sprite.svg') no-repeat !important;
     background-size: initial !important;
     display: block !important;
@@ -1285,6 +1287,37 @@ playback timings (ms):
   
   .navbar-fixed-top {
     position: fixed !important;
+  }
+  
+  /* Mobile footer adjustments */
+  .footer {
+    padding: 30px 0 !important;
+    text-align: center !important;
+  }
+  
+  .footer h1 {
+    font-size: 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    margin-bottom: 15px !important;
+    flex-wrap: nowrap !important;
+  }
+  
+  .footer h1 img {
+    height: 60px !important;
+    width: auto !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .footer .col-md-9,
+  .footer .col-sm-9,
+  .footer .col-md-3,
+  .footer .col-sm-3 {
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
   }
 }
 
