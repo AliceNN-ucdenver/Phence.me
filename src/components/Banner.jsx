@@ -11,6 +11,7 @@ const Banner = () => (
     backgroundSize: 'cover',
     backgroundPosition: 'center center'
   }}>
+    <div className="banner-overlay"></div>
     <div className="container">
       <div className="row bannertext">
         <div className="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-0 col-xs-12 zi-9">
@@ -30,7 +31,6 @@ const Banner = () => (
         </div>
       </div>
     </div>
-    <div className="banner-overlay"></div>
   </section>
 );
 

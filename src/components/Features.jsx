@@ -90,6 +90,9 @@ const Features = () => {
                     >
                       <div className="app-text">
                         <img src={f.img} alt={f.title} />
+                        <div className="image-overlay">
+                          <h4>Protect your loved ones</h4>
+                        </div>
                       </div>
                     </div>
                   ))}
