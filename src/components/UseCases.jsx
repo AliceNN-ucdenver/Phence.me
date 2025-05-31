@@ -86,7 +86,7 @@ const UseCases = () => {
             <h2 className="section-heading">Whatever you do, Wherever you go, be safe and get peace of mind</h2>
           </div>
         </div>
-        <div className="row areaicon">
+        <div className="row areaicon use-cases-icons">
           {useCases.map((uc, idx) => (
             <div key={uc.id} className="use-case-icon-wrapper">
               <div

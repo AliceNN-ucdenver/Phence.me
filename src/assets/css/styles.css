@@ -1045,7 +1045,30 @@ playback timings (ms):
     width: 90px !important;
     margin: 0 auto 15px auto !important;
     display: block !important;
-    background-size: contain !important;
+    background-size: auto !important;
+    background-repeat: no-repeat !important;
+    background-image: url('../svg/sprite.svg') !important;
+  }
+  
+  /* Ensure service icons maintain their sprite positions on mobile */
+  .service .servicelist li .icon {
+    width: 48px !important;
+    height: 48px !important;
+    background: url('../svg/sprite.svg') no-repeat !important;
+    display: block !important;
+    margin: 0 auto 15px auto !important;
+  }
+  
+  .service .servicelist li .icon.protect {
+    background-position: -20px -21px !important;
+  }
+  
+  .service .servicelist li .icon.assist {
+    background-position: -144px -21px !important;
+  }
+  
+  .service .servicelist li .icon.witness {
+    background-position: -275px -21px !important;
   }
   
   .service .servicelist li h3 {
@@ -1097,79 +1120,32 @@ playback timings (ms):
   }
   
   
-  /* Mobile use cases section - Force stacking */
+  /* Mobile use cases section - Hide icon grid and fix bleeding */
   .area .container {
     padding: 0 15px !important;
   }
   
-  .area .areaicon {
-    margin-bottom: 30px !important;
-    text-align: center !important;
-    display: block !important;
-    clear: both !important;
+  /* Hide the icon grid completely on mobile */
+  .use-cases-icons {
+    display: none !important;
   }
   
-  .areaicon .use-case-icon-wrapper {
-    width: 50% !important;
-    padding: 10px 5px !important;
-    margin-bottom: 15px !important;
-    display: block !important;
-    float: left !important;
-    box-sizing: border-box !important;
+  /* Fix use cases section height and overflow */
+  .area.section-space {
+    padding: 30px 0 !important;
+    overflow: hidden !important;
   }
   
-  .areaicon .use-case-icon-wrapper:nth-child(odd) {
-    clear: left !important;
-  }
-  
-  .areaicon .ib {
-    margin: 5px auto !important;
-    padding: 15px 10px !important;
-    min-width: 100px !important;
-    display: block !important;
-    text-align: center !important;
-    border-radius: 8px !important;
-    background: rgba(255,255,255,0.9) !important;
-    border: 1px solid #eee !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-  }
-  
-  .areaicon .ib.activeicon {
-    background: #00b9b9 !important;
-    color: white !important;
-  }
-  
-  .areaicon .ib span {
-    font-size: 12px !important;
-    display: block !important;
-    margin-top: 8px !important;
-    color: inherit !important;
-    font-weight: 500 !important;
-  }
-  
-  .areaicon .ib .icon {
-    margin-bottom: 8px !important;
-    width: 32px !important;
-    height: 32px !important;
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  
-  /* Mobile use cases gallery - Stack vertically */
-  .area .areaicon::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+  /* Mobile use cases gallery - Stack vertically with proper container */
   .content.demo-x.areaimg {
     height: auto !important;
-    padding: 20px 15px !important;
+    max-height: none !important;
+    padding: 0 15px !important;
     -webkit-overflow-scrolling: auto !important;
     overflow: visible !important;
     white-space: normal !important;
     position: relative !important;
+    margin-bottom: 0 !important;
   }
   
   .content.demo-x.areaimg > div {
@@ -1180,7 +1156,7 @@ playback timings (ms):
   
   .content.demo-x.areaimg .thumbnail {
     width: 100% !important;
-    margin: 0 0 25px 0 !important;
+    margin: 0 0 20px 0 !important;
     flex-shrink: none !important;
     height: auto !important;
     display: block !important;
@@ -1193,6 +1169,15 @@ playback timings (ms):
   
   .content.demo-x.areaimg .thumbnail:last-child {
     margin-bottom: 0 !important;
+  }
+  
+  /* Clear floats after use cases section to prevent bleeding */
+  .area.section-space::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
   }
   
   .content.demo-x.areaimg .thumbnail .caption {
