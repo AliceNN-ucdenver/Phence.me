@@ -19,7 +19,7 @@ const Banner = () => (
         </div>
         <div className="col-lg-6 col-md-6 col-sm-7 col-xs-12 zi-9 pl-40">
           <h1>Enabling a world where people care for and protect each other</h1>
-          <p>If protection, privacy and the security of loved ones matter to you, then meet Phenced.</p>
+          <p>If protection, privacy and the security of loved ones matter to you, then meet Phence.me.</p>
           <div className="pt-40" style={{display: 'flex', gap: '15px', flexWrap: 'wrap'}}>
             <a href="https://play.google.com/store/apps/details?id=com.rus.phencedapp" style={{display: 'inline-block'}}>
               <img src={googlePlay} alt="Google Play" style={{height: '60px', width: 'auto'}} />
