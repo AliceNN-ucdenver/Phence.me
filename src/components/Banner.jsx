@@ -13,10 +13,10 @@ const Banner = () => (
   }}>
     <div className="container">
       <div className="row bannertext">
-        <div className="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-0 zi-9 mnone">
+        <div className="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-0 col-xs-12 zi-9">
           <img src={bannerm} alt="Banner" />
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-7 zi-9 pl-40">
+        <div className="col-lg-6 col-md-6 col-sm-7 col-xs-12 zi-9 pl-40">
           <h1>Enabling a world where people care for and protect each other</h1>
           <p>If protection, privacy and the security of loved ones matter to you, then meet Phenced.</p>
           <div className="pt-40" style={{display: 'flex', gap: '15px', flexWrap: 'wrap'}}>
