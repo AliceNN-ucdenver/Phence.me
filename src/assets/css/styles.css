@@ -918,14 +918,14 @@ playback timings (ms):
     border-bottom: none;
   }
   
-  /* Mobile banner adjustments */
+  /* Mobile banner adjustments - Better stacking */
   .banner {
     height: auto !important;
-    min-height: 100vh;
-    padding-top: 80px !important;
-    padding-bottom: 40px !important;
+    min-height: 100vh !important;
+    padding: 80px 0 40px 0 !important;
     background-size: cover !important;
     background-position: center center !important;
+    background-attachment: scroll !important;
   }
   
   .banner .container {
@@ -933,15 +933,20 @@ playback timings (ms):
     display: flex !important;
     align-items: center !important;
     min-height: calc(100vh - 120px) !important;
+    position: relative !important;
+    z-index: 2 !important;
   }
   
-  .banner .bannertext {
+  .banner .row.bannertext {
     position: relative !important;
     top: auto !important;
     bottom: auto !important;
     padding: 20px 0 !important;
     width: 100% !important;
     margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
   
   .banner .bannertext > div {
@@ -949,15 +954,16 @@ playback timings (ms):
     float: none !important;
     display: block !important;
     margin-bottom: 30px !important;
+    text-align: center !important;
   }
   
   .banner .bannertext .zi-9:first-child {
-    text-align: center !important;
+    order: 1 !important;
     margin-bottom: 30px !important;
   }
   
   .banner .bannertext .zi-9:last-child {
-    text-align: center !important;
+    order: 2 !important;
   }
   
   /* Mobile banner phone image */
@@ -1001,27 +1007,37 @@ playback timings (ms):
     padding-left: 15px !important;
   }
   
-  /* Mobile Services section */
+  /* Mobile Services section - Force stacking */
   .service {
     background: #f8f9fa !important;
     padding: 40px 0 !important;
+  }
+  
+  .service .container {
+    padding: 0 15px !important;
   }
   
   .service .servicelist {
     padding: 0 !important;
     margin: 0 !important;
     list-style: none !important;
+    display: block !important;
   }
   
   .service .servicelist li {
     width: 100% !important;
     float: none !important;
     display: block !important;
-    margin-bottom: 40px !important;
-    padding: 30px 20px !important;
+    margin-bottom: 30px !important;
+    padding: 25px 20px !important;
     background: #fff !important;
     border-radius: 12px !important;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    clear: both !important;
+  }
+  
+  .service .servicelist li:last-child {
+    margin-bottom: 0 !important;
   }
   
   .service .servicelist li .icon {
@@ -1037,6 +1053,7 @@ playback timings (ms):
     margin-bottom: 15px !important;
     color: #010101 !important;
     font-weight: 600 !important;
+    text-align: center !important;
   }
   
   .service .servicelist li p {
@@ -1044,6 +1061,7 @@ playback timings (ms):
     line-height: 1.6 !important;
     color: #555 !important;
     margin: 0 !important;
+    text-align: center !important;
   }
   
   /* Mobile Features section */
@@ -1079,105 +1097,122 @@ playback timings (ms):
   }
   
   
-  /* Mobile use cases section */
+  /* Mobile use cases section - Force stacking */
+  .area .container {
+    padding: 0 15px !important;
+  }
+  
   .area .areaicon {
     margin-bottom: 30px !important;
     text-align: center !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
+    display: block !important;
+    clear: both !important;
   }
   
   .areaicon .use-case-icon-wrapper {
     width: 50% !important;
-    padding: 10px !important;
+    padding: 10px 5px !important;
     margin-bottom: 15px !important;
-    display: inline-block !important;
-    float: none !important;
+    display: block !important;
+    float: left !important;
+    box-sizing: border-box !important;
+  }
+  
+  .areaicon .use-case-icon-wrapper:nth-child(odd) {
+    clear: left !important;
   }
   
   .areaicon .ib {
     margin: 5px auto !important;
-    padding: 10px 5px !important;
-    min-width: 80px !important;
+    padding: 15px 10px !important;
+    min-width: 100px !important;
     display: block !important;
     text-align: center !important;
     border-radius: 8px !important;
-    background: rgba(255,255,255,0.1) !important;
+    background: rgba(255,255,255,0.9) !important;
+    border: 1px solid #eee !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  }
+  
+  .areaicon .ib.activeicon {
+    background: #00b9b9 !important;
+    color: white !important;
   }
   
   .areaicon .ib span {
-    font-size: 11px !important;
+    font-size: 12px !important;
     display: block !important;
-    margin-top: 5px !important;
-    color: #333 !important;
+    margin-top: 8px !important;
+    color: inherit !important;
+    font-weight: 500 !important;
   }
   
   .areaicon .ib .icon {
-    margin-bottom: 5px !important;
+    margin-bottom: 8px !important;
     width: 32px !important;
     height: 32px !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   
-  /* Mobile use cases gallery */
+  /* Mobile use cases gallery - Stack vertically */
+  .area .areaicon::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
   .content.demo-x.areaimg {
-    height: 400px !important;
-    padding-left: 2% !important;
-    padding-right: 2% !important;
-    -webkit-overflow-scrolling: touch !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    white-space: nowrap !important;
+    height: auto !important;
+    padding: 20px 15px !important;
+    -webkit-overflow-scrolling: auto !important;
+    overflow: visible !important;
+    white-space: normal !important;
     position: relative !important;
   }
   
   .content.demo-x.areaimg > div {
-    display: inline-flex !important;
-    width: max-content !important;
-    height: 100% !important;
-    align-items: flex-start !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
   }
   
   .content.demo-x.areaimg .thumbnail {
-    width: 280px !important;
-    margin-right: 15px !important;
-    margin-left: 5px !important;
-    flex-shrink: 0 !important;
-    height: 350px !important;
-    display: inline-block !important;
-    vertical-align: top !important;
+    width: 100% !important;
+    margin: 0 0 25px 0 !important;
+    flex-shrink: none !important;
+    height: auto !important;
+    display: block !important;
+    float: none !important;
     white-space: normal !important;
     border-radius: 12px !important;
     overflow: hidden !important;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
   }
   
-  .content.demo-x.areaimg .thumbnail:first-child {
-    margin-left: 15px !important;
-  }
-  
   .content.demo-x.areaimg .thumbnail:last-child {
-    margin-right: 15px !important;
+    margin-bottom: 0 !important;
   }
   
   .content.demo-x.areaimg .thumbnail .caption {
-    padding: 15px !important;
-    height: calc(100% - 200px) !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
+    padding: 20px !important;
+    height: auto !important;
+    display: block !important;
   }
   
   .content.demo-x.areaimg .thumbnail .caption h3 {
-    font-size: 16px !important;
-    margin-bottom: 10px !important;
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
     font-weight: bold !important;
+    color: #333 !important;
   }
   
   .content.demo-x.areaimg .thumbnail .caption p {
-    font-size: 13px !important;
-    line-height: 1.4 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
     color: #666 !important;
+    margin: 0 !important;
   }
   
   .content.demo-x.areaimg .thumbnail img {

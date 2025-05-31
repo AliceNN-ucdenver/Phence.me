@@ -25,8 +25,9 @@ const UseCases = () => {
 
   const handleClick = (idx) => {
     setActive(idx);
-    // Manually scroll to the active item horizontally only
-    if (scrollContainerRef.current) {
+    
+    // Only scroll horizontally on desktop, not mobile
+    if (window.innerWidth > 767 && scrollContainerRef.current) {
       const activeElement = scrollContainerRef.current.querySelector(`#img${idx + 1}`);
       if (activeElement) {
         const containerRect = scrollContainerRef.current.getBoundingClientRect();
@@ -41,15 +42,21 @@ const UseCases = () => {
     }
   };
 
-  // Auto-slide timer effect
+  // Auto-slide timer effect (disabled on mobile)
   useEffect(() => {
+    const checkMobile = () => window.innerWidth <= 767;
+    
+    if (checkMobile()) {
+      return; // Don't auto-scroll on mobile since we're stacking vertically
+    }
+    
     const timer = setInterval(() => {
       setActive((prevActive) => {
         const nextActive = (prevActive + 1) % useCases.length;
         
-        // Auto-scroll to the next item horizontally only
+        // Auto-scroll to the next item horizontally only on desktop
         setTimeout(() => {
-          if (scrollContainerRef.current) {
+          if (scrollContainerRef.current && !checkMobile()) {
             const activeElement = scrollContainerRef.current.querySelector(`#img${nextActive + 1}`);
             if (activeElement) {
               const containerRect = scrollContainerRef.current.getBoundingClientRect();
