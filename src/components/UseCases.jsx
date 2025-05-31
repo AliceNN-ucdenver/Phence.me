@@ -81,7 +81,7 @@ const UseCases = () => {
         </div>
         <div className="row areaicon">
           {useCases.map((uc, idx) => (
-            <div key={uc.id}>
+            <div key={uc.id} className="use-case-icon-wrapper">
               <div
                 id={uc.id}
                 className={`ib${active === idx ? ' activeicon' : ''}`}
