@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import footerLogo from '../assets/images/Logo-Black-and-red-transparent1-1.png';
 import '../assets/css/styles.css';
 
@@ -12,6 +13,11 @@ const Footer = () => (
             Phence.me
           </h1>
           <p>Whatever you do, Wherever you go, be safe and get peace of mind.</p>
+          <p style={{marginTop: '20px'}}>
+            <Link to="/privacy-policy" style={{color: '#00b9b9', textDecoration: 'none'}}>
+              Privacy Policy
+            </Link>
+          </p>
         </div>
         <div className="col-md-3 col-sm-3 center">
           <p>Follow us on:</p>
